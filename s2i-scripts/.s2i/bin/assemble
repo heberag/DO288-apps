@@ -12,11 +12,14 @@ config_s2i
 
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
+COPY -Rf /tmp/*.txt /home/student/
 
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
+DATE2='date'
 
 echo "---> Creating info page"
 echo "Page built on $DATE" >> ./info.html
+echo "Otra fecha $DATE2" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 echo "Prueba de cambio en s2i1" >> ./info.html
 
