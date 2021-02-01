@@ -12,8 +12,8 @@ config_s2i
 
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
-#chmod +x -Rf /tmp/
-cp -Rf /tmp/src/*.txt ./
+#chmod +x -Rf /tmp/src/
+#cp -Rf /tmp/src/*.txt ./
 
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
 DATE2=`date "+%YYYY, %b, %d"`
