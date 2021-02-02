@@ -12,11 +12,11 @@ config_s2i
 
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
-chmod +xrw /tmp/src/
+chmod +xrw -Rf /tmp/src/
 #cp -Rf /tmp/src/*.txt ./
 
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
-DATE2=`date "+%y, %b, %d"`
+DATE2=`date "+%Y, %b, %d"`
 
 echo "WORKSHOP SSA $DATE2" >> ./wsssa.html
 
